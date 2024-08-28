@@ -1,16 +1,17 @@
 module.exports = function headerComponent() {
   const header = document.createElement("header");
+  const styleEL = document.createElement("div");
   const wrapper = document.createElement("div");
   const imageWrapper = document.createElement("div");
   const imgSrc = require("./assets/images/hero.jpg");
   const image = document.createElement("img");
-
   const name = document.createElement("h1");
   const descriptionContainer = document.createElement("div");
   const descriptionTitle = document.createElement("h2");
   const descriptionContent = document.createElement("p");
 
   header.className = "header";
+  styleEL.className = "style-wrapper";
   wrapper.className = "wrapper";
   imageWrapper.className = "img-wrapper";
   image.src = imgSrc;
@@ -30,7 +31,7 @@ module.exports = function headerComponent() {
   wrapper.append(imageWrapper, descriptionContainer);
   imageWrapper.append(image, name);
   descriptionContainer.append(descriptionTitle, descriptionContent);
-  header.append(wrapper);
+  header.append(wrapper, styleEL);
 
   return header;
 };
