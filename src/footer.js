@@ -24,9 +24,12 @@ module.exports = function footer() {
   footerImage.className = "image";
   footerIcons.className = "footer-icons";
 
-  addressIcon.setAttribute("src", "./assets/images/map-marker.svg");
-  phoneIcon.setAttribute("src", "./assets/images/phone-classic.svg");
-  emailIcon.setAttribute("src", "./assets/images/email.svg");
+  const addressIconURL = require("./assets/images/map-marker.svg");
+  const phoneIconURL = require("./assets/images/phone-classic.svg");
+  const emailIconURL = require("./assets/images/email.svg");
+  addressIcon.setAttribute("src", addressIconURL);
+  phoneIcon.setAttribute("src", phoneIconURL);
+  emailIcon.setAttribute("src", emailIconURL);
 
   contactMe.textContent = "Contact Me";
   advertisement.textContent =
@@ -42,7 +45,8 @@ module.exports = function footer() {
   gitBtn.className = "btn";
   linkedinBtn.className = "btn";
 
-  footerImage.setAttribute("src", "./assets/images/hero_footer.jpg");
+  const footerImageURL = require("./assets/images/hero_footer.jpg");
+  footerImage.setAttribute("src", footerImageURL);
 
   gitLink.setAttribute("href", "https://github.com/Steliospne");
   linkedinLink.setAttribute(
@@ -50,8 +54,10 @@ module.exports = function footer() {
     "https://www.linkedin.com/in/stelios-pnevmatikakis-351a7116b/"
   );
 
-  gitIcon.setAttribute("src", "./assets/images/github-original-wordmark.svg");
-  linkedinIcon.setAttribute("src", "./assets/images/linkedin-original.svg");
+  const gitIconURL = require("./assets/images/github-original-wordmark.svg");
+  const linkedinIconURL = require("./assets/images/linkedin-original.svg");
+  gitIcon.setAttribute("src", gitIconURL);
+  linkedinIcon.setAttribute("src", linkedinIconURL);
 
   contactInfo.append(
     contactMe,
