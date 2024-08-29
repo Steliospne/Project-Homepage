@@ -59,7 +59,7 @@ module.exports = {
             encodeOptions: {
               jpeg: {
                 // https://sharp.pixelplumbing.com/api-output#jpeg
-                quality: 10,
+                quality: 50,
               },
               webp: {
                 // https://sharp.pixelplumbing.com/api-output#webp
@@ -72,7 +72,7 @@ module.exports = {
 
               // png by default sets the quality to 100%, which is same as lossless
               // https://sharp.pixelplumbing.com/api-output#png
-              png: { compressionLevel: 6, quality: 28 },
+              png: { compressionLevel: 8, quality: 50 },
 
               // gif does not support lossless compression at all
               // https://sharp.pixelplumbing.com/api-output#gif

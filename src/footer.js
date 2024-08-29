@@ -45,7 +45,7 @@ module.exports = function footer() {
   gitBtn.className = "btn";
   linkedinBtn.className = "btn";
 
-  const footerImageURL = require("./assets/images/CodingGoat.jpg");
+  const footerImageURL = require("./assets/images/CodingGoat.png");
   footerImage.setAttribute("src", footerImageURL);
 
   gitLink.setAttribute("href", "https://github.com/Steliospne");
